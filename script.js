@@ -1,3 +1,5 @@
+// --------------------- Chargement de la page Web ---------------------
+
 window.onload = function() {
 
     var canvasWidth = 900;
