@@ -1,6 +1,6 @@
 // --------------------- Chargement de la page Web ---------------------
 
-window.onload = () => {
+window.onload = (): void => {
   const canvasWidth: number = 900;
   const canvasHeight: number = 600;
   const blockSize: number = 30;
@@ -150,7 +150,7 @@ window.onload = () => {
       }
       ctx.restore();
     };
-    this.advance = () => {
+    this.advance = (): void => {
       const nextPosition: number = this.body[0].slice();
       switch (this.direction) {
         case 'left':
@@ -193,7 +193,7 @@ window.onload = () => {
         this.direction = newDirection;
       }
     };
-    this.checkCollision = () => {
+    this.checkCollision = (): boolean => {
       let wallCollision = false;
       let snakeCollision = false;
       const head: number = this.body[0]; // Selectionne la tête du serpent
